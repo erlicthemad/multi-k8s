@@ -15,8 +15,8 @@ before_install:
 # - gcloud config set project multi-k8s-300521
 # - gcloud config set compute/zone us-central1-c
 # - gcloud container clusters get-credentials my-first-cluster-1
-- echo echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-- docker build -t naujocke/react-test -f ./client/Dockerfile.dev ./client
+  - echo "$DOCKER_PASSWORD" | docker login  -u "$DOCKER_ID" --password-stdin
+  - docker build -t naujocke/react-test -f ./client/Dockerfile.dev ./client
 script:
 - docker run -e CI=true naujocke/react-test npm test
 # deploy:
