@@ -19,8 +19,8 @@ before_install:
   - docker build -t naujocke/react-test -f ./client/Dockerfile.dev ./client
 script:
 - docker run -e CI=true naujocke/react-test npm test
-# deploy:
-#   provider: script
-#   script: bash ./deploy.sh
-#   on:
-#     branch: master
+deploy:
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: master

@@ -9,7 +9,7 @@ docker push naujocke/multi-server:$SHA
 docker push naujocke/multi-worker:latest
 docker push naujocke/multi-worker:$SHA
 
-kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=naujocke/multi-server:$SHA
-kubectl set image deployments/client-deployment client=naujocke/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=naujocke/multi-worker:$SHA
+# kubectl apply -f k8s
+# kubectl set image deployments/server-deployment server=naujocke/multi-server:$SHA
+# kubectl set image deployments/client-deployment client=naujocke/multi-client:$SHA
+# kubectl set image deployments/worker-deployment worker=naujocke/multi-worker:$SHA
