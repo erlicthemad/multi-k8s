@@ -5,6 +5,7 @@ env:
   global:
   - SHA=$(git rev-parse HEAD)
   - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+  - secure: SeA2fHqFlQJgWx+pG9Mliey8jAKhPJqa/zhiDCAEECLULviYUDxU2aSTz+LqySk7iZAqVjkqYTb1f2IsphhYxwSkZUlTjGYFjiLIOBKb5dtwUccNahBSvUkYlmv0xypD0PWfvs4y3PezXx8iiuRPrmrTurHR8TQcot+6fMTm8jGpfED67ZjqC401QHjQqQrFshc6vbBtH2TqT4BHQ1cwvCm4QqfEJzIey2OTuIakVIOS4/0MTMGp5nVmWPPeQIAaYkmJhVpxx38twIYcuutuYb//lcHnYnCpcc/tR72zjPsdnJUMde+mxC7P0wFjyMnhS3m/VMTG/TONzOMaoUzojm31SfDUFvhiwb9+ix1y2isEYpXbu/QxqHFm08a+4KMZtgZdg0sUIocXbDTvjkd588umiR2wxevw99iQIgToBgyATPYlARzpmyfjlieTEnnnWgqyWzDZ1KGJwXzB+Tyfv7sC3uBI40p+lgcKvKHeoJ9bjd4J043v1ZUrdlynOW1JXNMqOPOvYDX9F2NLQbQL0ffl5kAWCFofuU9FrvVNbXqoZrGo7AUDEC5ymjplJOChRFGjtD2/Z0KICq2loNztnmtiFXptnGOIZ629FPHcFRCaVqBFHLT1XXnjU/8oYVURpyo93saExllD125AvKbg2fr7OdghdagqxFTIRrBNYe4=
 before_install:
 - openssl aes-256-cbc -K $encrypted_9f3b5599b056_key -iv $encrypted_9f3b5599b056_iv
   -in service-account.json.enc -out service-account.json -d
